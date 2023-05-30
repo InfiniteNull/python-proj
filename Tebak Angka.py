@@ -4,13 +4,13 @@ minRange = 1
 maxRange = 10
 randomRange = random.randint(minRange, maxRange)
 
-guess = int(input("Masukkan tebakan angka 1-10: "))
+guess = int(input("Input number between 1-10: "))
 
 while guess != randomRange:
     if guess < randomRange:
-        print("Angka Terlalu Rendah")
+        print("Number is too small")
     else:
-        print("Angka Terlalu Besar")
-    guess = int(input("Coba lagi: "))
+        print("Number is to big")
+    guess = int(input("Try Again: "))
 
-print("Selamat anda benar.")
+print("Congratulations, You are correct!")
